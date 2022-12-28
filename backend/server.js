@@ -1,6 +1,8 @@
 require('dotenv').config() //give access to .env file
 const express= require(`express`)
+const connectDB = require(`./config/db`)
 
+connectDB();
 const app = express()
 const PORT = process.env.port||5000
 
